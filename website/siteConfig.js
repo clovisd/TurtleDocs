@@ -21,9 +21,9 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Documentation', // Title for your website.
-  tagline: 'Documentation for the BattlePlugins Plugin Suite.',
-  url: 'https://docs.battleplugins.org', // Your website URL
+  title: 'TurtleDocs', // Title for your website.
+  tagline: 'Documentation for TRSQL Tools and Utilities.',
+  url: 'https://docs.trsql.net', // Your website URL
   baseUrl: '/', // Base URL for your project */
   noIndex: false,
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -31,8 +31,8 @@ const siteConfig = {
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'BattleDocs',
-  organizationName: 'BattlePlugins',
+  projectName: 'TurtleDocs',
+  organizationName: 'clovisd',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
@@ -41,9 +41,9 @@ const siteConfig = {
   headerLinks: [
     {page: 'index', label: 'Get'},
     {doc: 'index', label: 'Docs'},
-    {doc: 'dev/index', label: 'Dev'},
   //  {blog: false, label: 'Blog'},
-    {href: "https://github.com/battleplugins", label: "GitHub"},
+    {href: "https://github.com/clovisd", label: "GitHub"},
+    {href: "https://discord.gg", label: "Discord"},
     {search: true}
 
   ],
@@ -52,7 +52,7 @@ const siteConfig = {
   users,
 
   // Edit URL
-  editUrl: 'https://github.com/BattlePlugins/BattleDocs/tree/master/docs/',
+  editUrl: 'https://github.com/clovisd/TurtleDocs/tree/master/docs/',
 
   /* path to images for header/footer */
   headerIcon: 'img/header.png',
@@ -61,7 +61,7 @@ const siteConfig = {
 
   /* Colors for website */
   colors: {
-    primaryColor: '#21a6f0',
+    primaryColor: '#09008c',
     secondaryColor: '#ffffff',
   },
 
@@ -82,12 +82,12 @@ const siteConfig = {
   // Search Options and Settings
   algolia: {
     apiKey: 'b62c31628eaff3105e45e9be758b9d65',
-    indexName: 'battleplugins',
+    indexName: 'turtledocs',
     appId: '16AVNKSJVT'
   },
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} BattlePlugins.`,
+  copyright: `Copyright © ${new Date().getFullYear()} CL6 Web Company.`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
@@ -99,13 +99,13 @@ const siteConfig = {
 
 
   // CNAME Entry
-  cname: 'docs.battleplugins.org',
+  cname: 'docs.trsql.net',
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
   
   // Collapsible Sidebars
-  docsSideNavCollapsible: true,
+  docsSideNavCollapsible: false,
   
   // No .html extensions for paths.
   cleanUrl: true,
@@ -127,7 +127,7 @@ const siteConfig = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-  //   repoUrl: 'https://github.com/facebook/test-site',
+  repoUrl: 'https://github.com/facebook/test-site',
 };
 
 module.exports = siteConfig;

@@ -1,0 +1,13 @@
+{
+  "docs": {
+  	"BattleDocs": ["index"],
+  	"BattlePlugins": ["bp/index", "bp/history", "bp/members", "bp/timeline", "bp/faq"],
+    "BattleArena": ["ba/index", "ba/faq", "ba/history"],
+    "BattleTracker": ["bt/index", "bt/faq", "bt/history"],
+    "Other": ["doc3", "doc4", "doc5"]
+  },
+  "dev": {
+    "First Category": ["dev/index", "dev/doc1"],
+    "Second Category": ["dev/index", "dev/doc2"]
+  }
+}

@@ -53,4 +53,3 @@ iptables -t nat -I PREROUTING -i venet0 -p tcp --dport 8080 -j DNAT --to-destina
 
 iptables -I FORWARD -i venet0 -p tcp -d 10.8.0.2 --dport 8081 -j ACCEPT
 iptables -t nat -I PREROUTING -i venet0 -p tcp --dport 8081 -j DNAT --to-destination 10.8.0.2
-

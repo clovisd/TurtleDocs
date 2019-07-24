@@ -41,30 +41,25 @@ iptables -t nat -I PREROUTING -i venet0 -p tcp --dport 80 -j DNAT --to-destinati
 
 Here are all the rules we're using currently:
 
+```bash
 iptables -I FORWARD -i venet0 -p tcp -d 10.8.0.2 --dport 80 -j ACCEPT
-
 iptables -t nat -I PREROUTING -i venet0 -p tcp --dport 80 -j DNAT --to-destination 10.8.0.2
 
 
 iptables -I FORWARD -i venet0 -p tcp -d 10.8.0.2 --dport 25565 -j ACCEPT
-
 iptables -t nat -I PREROUTING -i venet0 -p tcp --dport 25565 -j DNAT --to-destination 10.8.0.2
-
 iptables -I FORWARD -i venet0 -p udp -d 10.8.0.2 --dport 25565 -j ACCEPT
-
 iptables -t nat -I PREROUTING -i venet0 -p udp --dport 25565 -j DNAT --to-destination 10.8.0.2
 
 
 iptables -I FORWARD -i venet0 -p tcp -d 10.8.0.2 --dport 8123 -j ACCEPT
-
 iptables -t nat -I PREROUTING -i venet0 -p tcp --dport 8123 -j DNAT --to-destination 10.8.0.2
 
 
 iptables -I FORWARD -i venet0 -p tcp -d 10.8.0.2 --dport 8080 -j ACCEPT
-
 iptables -t nat -I PREROUTING -i venet0 -p tcp --dport 8080 -j DNAT --to-destination 10.8.0.2
 
 
 iptables -I FORWARD -i venet0 -p tcp -d 10.8.0.2 --dport 8081 -j ACCEPT
-
 iptables -t nat -I PREROUTING -i venet0 -p tcp --dport 8081 -j DNAT --to-destination 10.8.0.2
+```
